@@ -3,12 +3,12 @@
 # See https://python.langchain.com/docs/integrations/vectorstores/redis
 #
 #
-# Issue - Got the error below using Redis cloud when storing the vector embeddind
+# Issue - Got the error below using Redis cloud when storing the vector embeddings
 # redis.exceptions.ResponseError: Vector index initial capacity 20000 exceeded server limit (511 with the given parameters)
 import os
 import getpass
 
-os.environ["OPENAI_API_KEY"] = "<YOUR_API_KEY"
+os.environ["OPENAI_API_KEY"] = "<YOUR_API_KEY>"
 
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
